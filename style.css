@@ -1,0 +1,390 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Cambo', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px 0px 30px;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+
+}
+.logo{
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;  
+}
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 100px;
+
+}
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    color:rgb(37, 46, 80);
+    font-size: 20px;
+    
+    
+}
+
+.navbar-list li:first-child > a {
+    color: rgb(23, 10, 70);
+    font-weight: 500;
+}
+
+.navbar i {
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+.navbar-list ~ a:hover{
+    background-color: rgb(103, 103, 124);
+
+}
+
+
+
+main {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+ 
+#hero{
+    padding: 30px 0px;
+    display: flex;
+    width: 100%;
+    margin: auto;
+
+}
+
+.izquierda{
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+   justify-content: center;
+    align-items: center;
+}
+.izquierda h1 {
+    font-size: 60px;
+    width: 50%;
+    margin-bottom:70px;
+    margin: auto;
+
+    
+    
+} 
+.izquierda h2 {
+    font-size:  28px;
+    line-height: 100px;
+    text-decoration: underline;
+    width: 50%;
+    margin: auto;
+    padding: 30px 0;
+    font-style: italic;
+}
+ .sesion {
+    display: flex;
+    gap: 20px;
+    padding: 20px 100px;
+    margin-bottom: 10px;
+ }
+.sesion a {
+ width: 50%;
+ color: black;
+ font-size: 20px ;
+ font-weight: 600;
+
+}
+.derecha {
+    background-image: url(./recursos/escritorio.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 65%;
+}
+
+#informacion{
+    background-color: white;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#informacion h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 50px ;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#informacion p{
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#servicios {
+    background-color: white;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+#servicios h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 50px ;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+.servicios { background-image: url(./recursos/escritorio.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+}
+
+.servicios-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px
+}
+
+.cards {
+    width: 300px;
+    height: 290px;
+    margin: auto;
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    border: 2px solid black; 
+    border-radius: 1rem; 
+
+}
+.cards p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400; 
+    padding: 10px;
+    
+    
+
+}
+
+.cards h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+ 
+i{
+    font-size: 50px;
+}
+
+
+#contacto {
+padding: 40px 0;
+display: flex;
+width: 100%;
+justify-content: space-around;
+align-items: flex-start;
+flex-wrap: wrap;
+
+} 
+.contacto-info h2{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 50px ;
+    font-weight: 200;
+    font-style: italic;
+text-decoration: underline; 
+
+}
+
+.contacto-info {
+    padding: 10px 0px;
+    gap: 20px; 
+}
+
+.contacto-info p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    
+}
+
+.contacto-info i{
+    font-size: 30px;
+
+}
+
+footer{
+    background-color: white;
+    color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 25px 0;
+}
+
+footer a,
+footer p{
+    color:rgb(39, 37, 68);
+    font-weight: 300;
+    font-size: 14px;
+    
+}
+footer img{
+   width: 50px;
+    border-radius: 15px;
+  
+  
+
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+@media(max-width:992px) {
+    .info {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+  .derecha{
+    display: none;
+  }
+    
+    
+  .izquierda h1{
+    width: 100%;
+    align-items: center;
+}
+
+.izquierda h2{
+    width: 100%;
+    text-align: center;
+}   
+.sesion{
+justify-content: space-between;
+flex-wrap: wrap;
+}
+}
+@media (max-width: 575px) {
+    .navbar ul{
+        background-color:white;
+        width: 100%;
+        height: calc(100vh-80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+    }
+    .navbar i{
+        display: block;
+    }
+
+    #toggle-menu:checked + .navbar-list {
+        transform: translateX(0%);
+
+    }
+    .izquierda h1{
+        width: 100%;
+        align-items: center;
+    }
+
+    .izquierda h2{
+        width: 100%;
+        text-align: center;
+    }
+
+.navbar-list li {
+    position: relative;
+    padding: 0;
+
+}
+.sesion{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+}
+    
+
+
