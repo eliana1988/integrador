@@ -33,6 +33,9 @@ header {
     margin-top: 15px;
     margin-bottom: 10px;  
 }
+.logo:hover{
+    transform: scale(1.15);
+}
 .navbar,
 .navbar-list {
     display: flex;
@@ -55,9 +58,17 @@ header {
     
 }
 
+.navbar
+ a:hover { 
+    color: white;
+    background-color: rgb(37, 46, 80);
+    border-radius: 10px;
+    transition: all 0.40 ease-in-out;
+
+}
+
 .navbar-list li:first-child > a {
-    color: rgb(23, 10, 70);
-    font-weight: 500;
+    font-weight: 550;
 }
 
 .navbar i {
@@ -69,10 +80,6 @@ header {
     display: none;
 }
 
-.navbar-list ~ a:hover{
-    background-color: rgb(103, 103, 124);
-
-}
 
 
 
@@ -102,6 +109,9 @@ main {
    justify-content: center;
     align-items: center;
 }
+.izquierda :hover{
+    transform: scale(1.15);
+}
 .izquierda h1 {
     font-size: 60px;
     width: 50%;
@@ -113,18 +123,18 @@ main {
 } 
 .izquierda h2 {
     font-size:  28px;
-    line-height: 100px;
     text-decoration: underline;
     width: 50%;
-    margin: auto;
-    padding: 30px 0;
+    padding: 20px 0px;
     font-style: italic;
+    margin: auto;
 }
  .sesion {
+    width: 50%;
     display: flex;
     gap: 20px;
-    padding: 20px 100px;
-    margin-bottom: 10px;
+    padding: 20px 0px;
+    margin: auto;
  }
 .sesion a {
  width: 50%;
@@ -132,6 +142,13 @@ main {
  font-size: 20px ;
  font-weight: 600;
 
+}
+
+.sesion a:hover{
+    color: white;
+    background-color: rgb(37, 46, 80);
+    border-radius: 10px;
+  
 }
 .derecha {
     background-image: url(./recursos/escritorio.jpg);
@@ -202,6 +219,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 25px
+}
+
+.servicios-cards :hover {
+    transform: scale(1.15);
 }
 
 .cards {
@@ -325,24 +346,36 @@ footer img{
         width: 100%;
         align-items: center;
     }
+
+    #hero{
+        flex-wrap: wrap;
+    }
   .derecha{
-    display: none;
-  }
-    
-    
-  .izquierda h1{
     width: 100%;
-    align-items: center;
+    height: 40vh;
+    
+  }
+  .izquierda{
+    margin: 50px 0;
+    width: 100%;
+}
+.izquierda h2 {
+font-size:  20px;
+padding: 10px 20px;
+width: 100%;
+text-align: center;
+line-height: 60px;
 }
 
-.izquierda h2{
-    width: 100%;
-    text-align: center;
-}   
 .sesion{
-justify-content: space-between;
-flex-wrap: wrap;
-}
+font-size: 22px;
+width: 100%;
+padding: 10px 5px ;
+gap: 5px;
+text-align: center;
+
+}  
+   
 }
 @media (max-width: 575px) {
     .navbar ul{
@@ -365,25 +398,33 @@ flex-wrap: wrap;
         transform: translateX(0%);
 
     }
-    .izquierda h1{
-        width: 100%;
-        align-items: center;
+    #hero{
+        flex-wrap: wrap;
     }
-
-    .izquierda h2{
-        width: 100%;
-        text-align: center;
+  .derecha{
+    width: 100%;
+    height: 40vh;
+   margin: 10px 5px;
+    
+  }
+    
+    .izquierda{
+        margin: 50px 0;
     }
+   .izquierda h2 {
+    font-size:  20px;
+    padding: 5px 50px;
+    width: 100%;
+    margin: auto;
+   }
 
-.navbar-list li {
-    position: relative;
-    padding: 0;
-
-}
-.sesion{
-    justify-content: space-between;
-    flex-wrap: wrap;
-    }
+   .sesion{
+    font-size: 22px;
+    width: 100%;
+    margin: 0px 30px;
+   }
+  
+    
 }
     
 
